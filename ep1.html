@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://imas.gree-apps.net/app/index.php/voice_drama/play/id/410001/to/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./ep1_files/58c1b067d0"></script><script src="./ep1_files/nr-1071.min.js.다운로드"></script><script type="text/javascript" async="" src="./ep1_files/ga.js.다운로드"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+<title>ｱｲﾄﾞﾙﾏｽﾀｰ ﾐﾘｵﾝﾗｲﾌﾞ!</title>
+<style type="text/css">
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0) !important; }
+body { margin: 0; padding: 0;}
+</style>
+	
+    <link rel="stylesheet" href="./ep1_files/2a496d537c616659bdb2da9cf6b7646ae1758f68b8d92b163c3550a6713789b1" media="screen">
+
+		<link rel="stylesheet" href="./ep1_files/67746bc05cb56b6364bc53cea16f81d2a6cb466e55a60cef62a4e2c1c6f6f221" media="screen">
+<link rel="apple-touch-icon-precomposed" href="http://cdn.bn765.com/66b/764e6fa42f542a827f9906f3368544af8b0240ab87555553935418bdab94dc5c?ccea7c4d7810724ac3b608ccab5e6802">
+<link rel="shortcut icon" href="http://cdn.bn765.com/a2c/aa5c89f6a409ee3fea6affbdb9218df15c783ce9fa6e3da6ccdcf78f578a0380?3ab584d93f830b73b66f97dd28ba426a">
+</head>
+
+<body style="background-color:#000">
+<div id="gree-app-container">
+
+
+<div id="flash-container">
+
+
+
+<canvas id="canvas" height="832" style="background-color: rgb(0, 0, 0); margin: auto; zoom: 0.5;" width="640"></canvas>
+</div>
+	<div id="main-container" style="display: none">
+		<div id="wrapper"></div>
+	</div>
+<script src="./ep1_files/jquery.min.js.다운로드"></script>
+<script src="./ep1_files/598e56bff714e205e4e65d7be1aad3e5e545efb8efc60168d7f2b95e01177b38"></script>
+
+
+	
+
+<script src="./ep1_files/9b4a0f4bd45014501b6fd3b1d5a01215"></script>
+<script src="./ep1_files/911b0eb67e33e6a0174b1f9a6a6956b0"></script>
+
+
+<script>
+var imas = imas || {};
+imas.g_voice = null;
+imas.g_sound_play_img = "http://cdn.bn765.com/3cb/2a508eecead41624b69b863e9ac2709a2bb6892a979ffd542814544dbbdec808?b89a6f7c8588835e39e4deb8d3b10e32";
+imas.g_sound_stop_img = "http://cdn.bn765.com/475/61575b3542de59cfffc38df1c02bfbd555088474be267ac510a1f853f36522f0?c0353191c612375461c1bf902f88e8e3";
+
+imas.SendLog = function(path) {
+	if (path) {
+		$.post(
+			'http://imas.gree-apps.net/app/index.php/voice/req',
+			{
+				'url': 'voice_drama/play',
+				'path': path
+			}
+		);
+	}
+};
+
+imas.PlaySoundByPath = function( path, callback ) {
+	if (imas.g_voice) {
+		imas.g_voice.stop();
+	} else {
+		imas.g_voice = new imas.Voice();
+	}
+
+	if ( path ) {
+		imas.g_voice.load( path );
+		imas.g_voice.play( callback );
+
+		$.post(
+			'http://imas.gree-apps.net/app/index.php/voice/req',
+			{
+				'url': 'voice_drama/play',
+				'path': path
+			}
+		);
+	}
+};
+imas.StopSound = function() {
+	if ( imas.g_voice && imas.g_voice.isPlaying() ) {
+		imas.g_voice.stop();
+	}
+	imas.g_voice = null;
+};
+
+imas.IsPlaying = function() {
+	if ( imas.g_voice == null ) {
+		return false;
+	}
+
+	return imas.g_voice.isPlaying();
+};
+imas.GetPlayingPath = function() {
+	if ( imas.g_voice == null ) {
+		return null;
+	}
+
+	return imas.g_voice.src();
+}
+
+$(document).ready(function() {
+	var supportClickStart , supportClickEnd;
+	if ((("createTouch" in document) || ("ontouchstart" in document)) && navigator.userAgent.indexOf("Android 3.2") == -1) {
+		supportClickStart = 'touchstart';
+		supportClickEnd = 'touchend';
+	} else {
+		supportClickStart = 'mousedown';
+		supportClickEnd = 'mouseup';
+	}
+
+	var changeImage = function( path, is_play_img ) {
+		$('.idol-sound').each( function() {
+			var inputs = $(this).children('input');
+			if ( inputs.length == 0 )
+				return;
+
+			input_path = inputs[0].value;
+			if ( input_path == path ) {
+				var img = $(this).children('img');
+				if ( is_play_img ) {
+					img.attr( 'src', imas.g_sound_play_img );
+				}
+				else {
+					img.attr( 'src', imas.g_sound_stop_img );
+				}
+			}
+		});
+	};
+
+	$('.idol-sound').on(supportClickEnd, function() {
+					if(!imas.SoundVolume.voice.isVolumeState()) {
+				
+				$(this).children('img').not(':animated').animate({
+					opacity: ".3"
+				}, 500).animate({
+					opacity: "1"
+				}, 500);
+				return;
+			}
+		
+		var inputs = $(this).children('input');
+		if (inputs.length == 0) return;
+		var click_path = inputs[0].value;
+
+		var is_play = false;
+		if (imas.IsPlaying()) {
+			var now_path = imas.GetPlayingPath();
+			if (now_path == click_path) {
+				changeImage(now_path, true);
+
+				imas.StopSound();
+			} else {
+				$('.idol-sound>img').each(function () {
+					$(this).attr('src', imas.g_sound_play_img);
+				});
+
+				is_play = true;
+			}
+		} else {
+			is_play = true;
+		}
+
+		if (is_play === true) {
+			changeImage(click_path, false);
+
+			imas.PlaySoundByPath(click_path, function () {
+				changeImage(click_path, true);
+			});
+		}
+	});
+
+	var caravanChangeImage = function( path, is_play_img ) {
+		$('.caravan-idol-sound').each( function() {
+			var inputs = $(this).children('input');
+			if ( inputs.length == 0 )
+				return;
+
+			input_path = inputs[0].value;
+			if ( input_path == path ) {
+				var img = $(this).children('img');
+				if ( is_play_img ) {
+					img.attr( 'src', imas.g_sound_play_img );
+				}
+				else {
+					img.attr( 'src', imas.g_sound_stop_img );
+				}
+			}
+		});
+	};
+
+	$('.caravan-idol-sound').on(supportClickEnd, function() {
+		if( !imas.SoundVolume.voice.isVolumeState() ){
+			
+			$(this).children('img').not(':animated').animate({
+				opacity: ".3"
+			}, 500).animate({
+				opacity: "1"
+			}, 500);
+			return;
+		}
+
+		var inputs = $(this).children( 'input' );
+		if ( inputs.length == 0 ) return;
+		var click_path = inputs[0].value;
+
+		var is_play = false;
+		if ( imas.IsPlaying() ) {
+			var now_path = imas.GetPlayingPath();
+			if ( now_path == click_path ) {
+				caravanChangeImage( now_path, true );
+
+				imas.StopSound();
+			}
+			else {
+				$('.caravan-idol-sound>img').each( function() {
+					$(this).attr( 'src', imas.g_sound_play_img );
+				});
+
+				is_play = true;
+			}
+		}
+		else {
+			is_play = true;
+		}
+
+		if ( is_play === true ) {
+			caravanChangeImage( click_path, false );
+
+			$.post(
+				'http://imas.gree-apps.net/app/index.php/caravan/voice_read',
+				{
+					'mode': 401,
+					'voice_id': $(this).data('id')
+				}
+			);
+
+			imas.PlaySoundByPath( click_path, function() {
+				caravanChangeImage( click_path, true );
+			});
+		}
+	});
+});
+</script>
+
+<script>
+	$(document).ready(function () {
+		init();
+	});
+</script>
+
+<script type="text/javascript" src="./ep1_files/d1427b19f571e9c72220cd7119eb8e2a496375fe86925598d2ddeb72176b4215"></script>
+
+<script type="text/javascript" src="./ep1_files/5d237d4cec351dc4fd479ab92721909524f92af3ebd85697c540c49e9d11431a"></script>
+<script>
+	imas.SoundVolume.init(
+			{
+				voice: "1",
+				webview_se: "",
+				webview_bgm: "",
+				webview_bgm_volume: ""
+			}
+	);
+</script>
+	
+<script src="./ep1_files/5caaca37a734b4a0e9058e9542f161353a2c8dbe73e6092a10d323407ff5fa41"></script>
+<script>
+	Howler.iOSAutoEnable = true;
+</script>
+<script src="./ep1_files/e108ebe0dfb58fbfca862bc728e04ab79ef7e123c7fe888faac69166f59d22f22fc27813a44d7b898e23cec3740f5fa7"></script>
+<script>
+	var imageArray={
+	spritesheet0:"./ep1_files/e108ebe0dfb58fbfca862bc728e04ab7a685eb096b8c7c78678b1669ccb9dcbd0a4c777fe670dee6075d9a0d20268f84.png",
+};
+
+	var method="voice_drama";
+
+	if(!window.imageArray) {
+		imageArray = {};
+	}
+		
+			imageArray.card_symbol1 = "./ep1_files/48ecc39dd995ebd5756cd69f95a4f09ac7cb5447740ee67dd8ff8ed5c78bbfa1b839787f7fdba53be620c2675396deb1.png";
+			
+			imageArray.symbol_info1 = {"type":"json","src":"data:;base64,eyJmcmFtZXMiOiB7CgoiYm9keSI6CnsKCSJmcmFtZSI6IHsieCI6MSwieSI6MSwidyI6MzEyLCJoIjo1NDB9LAoJInJvdGF0ZWQiOiBmYWxzZSwKCSJ0cmltbWVkIjogZmFsc2UsCgkic3ByaXRlU291cmNlU2l6ZSI6IHsieCI6MCwieSI6MCwidyI6MzEyLCJoIjo1NDB9LAoJInNvdXJjZVNpemUiOiB7InciOjMxMiwiaCI6NTQwfQp9LAoiZmFjZTEiOgp7CgkiZnJhbWUiOiB7IngiOjE1NCwieSI6NTQyLCJ3IjoxNTIsImgiOjE1Mn0sCgkicm90YXRlZCI6IGZhbHNlLAoJInRyaW1tZWQiOiBmYWxzZSwKCSJzcHJpdGVTb3VyY2VTaXplIjogeyJ4IjowLCJ5IjowLCJ3IjoxNTIsImgiOjE1Mn0sCgkic291cmNlU2l6ZSI6IHsidyI6MTUyLCJoIjoxNTJ9Cn0sCiJmYWNlMiI6CnsKCSJmcmFtZSI6IHsieCI6MSwieSI6NTQyLCJ3IjoxNTIsImgiOjE1Mn0sCgkicm90YXRlZCI6IGZhbHNlLAoJInRyaW1tZWQiOiBmYWxzZSwKCSJzcHJpdGVTb3VyY2VTaXplIjogeyJ4IjowLCJ5IjowLCJ3IjoxNTIsImgiOjE1Mn0sCgkic291cmNlU2l6ZSI6IHsidyI6MTUyLCJoIjoxNTJ9Cn0sCiJmYWNlMyI6CnsKCSJmcmFtZSI6IHsieCI6MzA3LCJ5Ijo1NDIsInciOjE1MiwiaCI6MTUyfSwKCSJyb3RhdGVkIjogZmFsc2UsCgkidHJpbW1lZCI6IGZhbHNlLAoJInNwcml0ZVNvdXJjZVNpemUiOiB7IngiOjAsInkiOjAsInciOjE1MiwiaCI6MTUyfSwKCSJzb3VyY2VTaXplIjogeyJ3IjoxNTIsImgiOjE1Mn0KfSwKImZhY2U0IjoKewoJImZyYW1lIjogeyJ4IjozMTQsInkiOjE1NCwidyI6MTUyLCJoIjoxNTJ9LAoJInJvdGF0ZWQiOiBmYWxzZSwKCSJ0cmltbWVkIjogZmFsc2UsCgkic3ByaXRlU291cmNlU2l6ZSI6IHsieCI6MCwieSI6MCwidyI6MTUyLCJoIjoxNTJ9LAoJInNvdXJjZVNpemUiOiB7InciOjE1MiwiaCI6MTUyfQp9LAoiZmFjZTUiOgp7CgkiZnJhbWUiOiB7IngiOjMxNCwieSI6MSwidyI6MTUyLCJoIjoxNTJ9LAoJInJvdGF0ZWQiOiBmYWxzZSwKCSJ0cmltbWVkIjogZmFsc2UsCgkic3ByaXRlU291cmNlU2l6ZSI6IHsieCI6MCwieSI6MCwidyI6MTUyLCJoIjoxNTJ9LAoJInNvdXJjZVNpemUiOiB7InciOjE1MiwiaCI6MTUyfQp9LAoibGlwMSI6CnsKCSJmcmFtZSI6IHsieCI6MzE0LCJ5Ijo0MDksInciOjUwLCJoIjo1MH0sCgkicm90YXRlZCI6IGZhbHNlLAoJInRyaW1tZWQiOiBmYWxzZSwKCSJzcHJpdGVTb3VyY2VTaXplIjogeyJ4IjowLCJ5IjowLCJ3Ijo1MCwiaCI6NTB9LAoJInNvdXJjZVNpemUiOiB7InciOjUwLCJoIjo1MH0KfSwKImxpcDIiOgp7CgkiZnJhbWUiOiB7IngiOjMxNCwieSI6MzU4LCJ3Ijo1MCwiaCI6NTB9LAoJInJvdGF0ZWQiOiBmYWxzZSwKCSJ0cmltbWVkIjogZmFsc2UsCgkic3ByaXRlU291cmNlU2l6ZSI6IHsieCI6MCwieSI6MCwidyI6NTAsImgiOjUwfSwKCSJzb3VyY2VTaXplIjogeyJ3Ijo1MCwiaCI6NTB9Cn0sCiJsaXAzIjoKewoJImZyYW1lIjogeyJ4IjozMTQsInkiOjMwNywidyI6NTAsImgiOjUwfSwKCSJyb3RhdGVkIjogZmFsc2UsCgkidHJpbW1lZCI6IGZhbHNlLAoJInNwcml0ZVNvdXJjZVNpemUiOiB7IngiOjAsInkiOjAsInciOjUwLCJoIjo1MH0sCgkic291cmNlU2l6ZSI6IHsidyI6NTAsImgiOjUwfQp9fSwKImxheW91dCI6IHsKCSJib2R5IjogeyAieCI6IC0xNTYsICJ5IjogLTU0MCB9LAoJImxpcCI6IHsgIngiOiAtMTgsICJ5IjogLTQzNyB9LAoJImVtb3RlIjogeyAieCI6IDU1LCAieSI6IC01ODAgfQp9Cn0K"};
+			
+			imageArray.card_bg1 = "./ep1_files/48ecc39dd995ebd5756cd69f95a4f09a820daacf51683e19cac1188b475d1140b8d0ef1ed9e1afccbdb3e899067bc3c4.jpg";
+		
+	_root.next_url = "./main.html";
+	        
+        		    _root.command_total = "22";
+        	        
+        		    _root.c0 = "load,$url0,$audio_path,$audio_info,$audio_path_lq,$audio_info";
+        	        
+        		    _root.c1 = "bg,1";
+        	        
+        		    _root.c2 = "fade,1";
+        	        
+        		    _root.c3 = "start,0,オープニングストーリー";
+        	        
+        		    _root.c4 = "bgm,town_rmx";
+        	        
+        		    _root.c5 = "symbol,1,50";
+        	        
+        		    _root.c6 = "motion,1,6";
+        	        
+        		    _root.c7 = "text,1,2,,北上麗花,こんにちは､ﾌﾟﾛﾃﾞｭ-ｻ-さん♪今日も地味で普通で素敵ですね♪";
+        	        
+        		    _root.c8 = "text,0,0,telop,$pname,お､どうした麗花｡今日は1日ｵﾌのはずだろう?";
+        	        
+        		    _root.c9 = "text,1,3,,北上麗花,はい!でもでも､特に予定がなくて｡何をしようか迷っちゃって｡";
+        	        
+        		    _root.c10 = "emote,1,8,0";
+        	        
+        		    _root.c11 = "text,1,2,,北上麗花,迷ってる間に､事務所にたどり着いちゃいました♪";
+        	        
+        		    _root.c12 = "text,1,1,,北上麗花,ﾌﾟﾛﾃﾞｭ-ｻ-さんと遊ぼうと思って､いろいろ持ってきたんですよ｡落書き帳とか､積み木とか!";
+        	        
+        		    _root.c13 = "text,0,0,telop,$pname,相変わらず謎のﾁｮｲｽだ…｡";
+        	        
+        		    _root.c14 = "text,0,0,telop,$pname,とはいえ…せっかく来てくれたのに悪いな､麗花｡俺は仕事があって､相手をするのは難しそうなんだ｡";
+        	        
+        		    _root.c15 = "emote,1,18,0";
+        	        
+        		    _root.c16 = "text,1,3,,北上麗花,そうなんですか?残念…｡うーん､どうしようかな…｡";
+        	        
+        		    _root.c17 = "emote,1,1,0";
+        	        
+        		    _root.c18 = "text,1,1,,北上麗花,…あ､そうだ!お仕事中のみんなに会いに行こうっと♪";
+        	        
+        		    _root.c19 = "emote,1,14,0";
+        	        
+        		    _root.c20 = "text,1,1,,北上麗花,突然会いに行ったら､みんな驚いてくれるかな?ふふっ♪ではでは､行ってきまーす♪";
+        	        
+        		    _root.c21 = "end,1,$url2";
+        	        
+        		    _root.url0 = "./main.html";
+        	        
+        		    _root.url1 = "./main.html";
+        	        
+        		    _root.url2 = "./main.html";
+        	        
+        		    _root.audio_path = "";
+        	        
+        		    _root.audio_path_lq = "";
+        	        
+        		    _root.audio_info = "";
+        	        
+        		    _root.pname = "プロデューサー";
+        	
+	
+		function loadRoot() {
+			window[method](lib = lib||{}, images = images||{}, createjs = createjs||{});
+			exportRoot = new lib[method]();
+			exportRoot.setTransform(0, 0, targetZoom, targetZoom);
+		}
+	
+</script>
+
+
+
+
+
+
+
+
+
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"58c1b067d0","applicationID":"32777948","transactionName":"YVJUYEQAW0NQWkxaWlgYdUFFFVpdHk9XWlZTaFJGVwxUH0FVWUoaX1MZHhkVWh8b","queueTime":0,"applicationTime":64,"atts":"TRVXFgwaSE0=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
